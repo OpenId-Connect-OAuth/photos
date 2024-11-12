@@ -23,7 +23,7 @@ public class WebSecurityConfig {
         jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(new KeycloakRoleConverter());
 
         http.authorizeHttpRequests(authz -> authz
-                                            .requestMatchers(HttpMethod.GET, "/photos/**")
+                                            .requestMatchers(HttpMethod.GET, "/photos/all")
                                             // .hasAuthority("SCOPE_profile")
                                             .hasRole("developer")
                                             // .hasAuthority("ROLE_developer")

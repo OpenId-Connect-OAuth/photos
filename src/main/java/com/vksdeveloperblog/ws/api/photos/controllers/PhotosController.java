@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/photos")
 public class PhotosController {
 
-    @GetMapping("path")
+    @GetMapping("/all")
     public List<PhotoRest> getPhotos() {
         PhotoRest photo1 = new PhotoRest();
         photo1.setAlbumId("albumIdHere");
